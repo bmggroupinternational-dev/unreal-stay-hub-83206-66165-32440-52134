@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
 import { Star, Users, Bed, Bath, Maximize } from "lucide-react";
 import { usePageTransition } from "@/contexts/PageTransitionContext";
 import { motion } from "framer-motion";
@@ -273,6 +274,8 @@ const Suites = () => {
           </Card>
         </motion.div>
       </section>
+
+      <Footer />
     </div>
   );
 };

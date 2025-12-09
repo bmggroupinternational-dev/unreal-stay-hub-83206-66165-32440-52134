@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
 import { 
   Wifi, Car, Coffee, Tv, Wind, UtensilsCrossed, 
   Waves, Dumbbell, Shield, Headphones, Smartphone, Mic
@@ -156,6 +157,8 @@ const Amenities = () => {
           </div>
         </motion.div>
       </section>
+
+      <Footer />
     </div>
   );
 };

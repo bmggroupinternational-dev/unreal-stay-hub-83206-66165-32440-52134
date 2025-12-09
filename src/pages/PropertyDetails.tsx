@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
 import { Star, Wifi, Car, Coffee, Tv, Wind, UtensilsCrossed, Users, Bed, Bath, Home } from "lucide-react";
 import { usePageTransition } from "@/contexts/PageTransitionContext";
 import { motion } from "framer-motion";
@@ -9,9 +10,9 @@ import heroImage from "@/assets/building-exterior.jpg";
 import livingRoom from "@/assets/living-room-main.jpg";
 import bedroom from "@/assets/bedroom-main.jpg";
 import kitchen from "@/assets/kitchen-modern.jpg";
-import bathroom from "@/assets/bathroom-vanity.jpg";
-import entertainment from "@/assets/entertainment-wall.jpg";
+import bathroom from "@/assets/bathroom-shower.jpg";
 import seatingArea from "@/assets/seating-area.jpg";
+import gallery6 from "@/assets/gallery-6.jpg";
 
 const PropertyDetails = () => {
   const { navigate } = usePageTransition();
@@ -45,7 +46,7 @@ const PropertyDetails = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background pb-24">
+    <div className="min-h-screen bg-background">
       <Navigation />
       
       {/* Hero Section */}
@@ -149,7 +150,7 @@ const PropertyDetails = () => {
               { image: bedroom, name: 'Master Bedroom' },
               { image: kitchen, name: 'Modern Kitchen' },
               { image: bathroom, name: 'Luxury Bathroom' },
-              { image: entertainment, name: 'Entertainment Area' },
+              { image: gallery6, name: 'Entertainment Area' },
               { image: seatingArea, name: 'Lounge Space' }
             ].map((item, i) => (
               <motion.div key={i} variants={scaleInVariants}>
@@ -186,6 +187,8 @@ const PropertyDetails = () => {
           </Button>
         </motion.div>
       </section>
+
+      <Footer />
     </div>
   );
 };

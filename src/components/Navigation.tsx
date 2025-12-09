@@ -15,6 +15,8 @@ export const Navigation = () => {
     { to: "/", label: "Home" },
     { to: "/suites", label: "Suites" },
     { to: "/amenities", label: "Amenities" },
+    { to: "/offers", label: "Offers" },
+    { to: "/blog", label: "Blog" },
     { to: "/about", label: "About Us" }
   ];
 
