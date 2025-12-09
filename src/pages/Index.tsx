@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Home, Shield, Star, Users, MapPin, Wifi, Car, Coffee, ChevronDown, Quote } from "lucide-react";
 import { BookingBar } from "@/components/BookingBar";
 import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
 import { usePageTransition } from "@/contexts/PageTransitionContext";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
@@ -454,50 +455,7 @@ const Index = () => {
 
       <BookingBar />
 
-      {/* Footer - Full Width */}
-      <footer className="bg-primary text-primary-foreground py-16">
-        <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-4 gap-12 mb-12">
-            <div className="md:col-span-2">
-              <div className="flex items-center gap-3 mb-4">
-                <Home size={32} />
-                <div>
-                  <h3 className="font-alfa text-2xl font-bold">UNREAL HOMES</h3>
-                  <p className="font-poppins font-semibold text-sm opacity-80">BY WHISTLING WOODS</p>
-                </div>
-              </div>
-              <p className="font-poppins opacity-80 max-w-md mb-6">
-                Creating extraordinary staycation experiences with modern comfort and luxury. Your home away from home awaits.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="font-poppins font-semibold text-lg mb-4">Quick Links</h4>
-              <ul className="space-y-2 font-poppins opacity-80">
-                <li><a href="/property" className="hover:opacity-100 transition-opacity">Properties</a></li>
-                <li><a href="/suites" className="hover:opacity-100 transition-opacity">Suites</a></li>
-                <li><a href="/amenities" className="hover:opacity-100 transition-opacity">Amenities</a></li>
-                <li><a href="/about" className="hover:opacity-100 transition-opacity">About Us</a></li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-poppins font-semibold text-lg mb-4">Contact</h4>
-              <ul className="space-y-2 font-poppins opacity-80">
-                <li>support@unrealhomes.com</li>
-                <li>+1 (555) 123-4567</li>
-                <li className="pt-2">Available 24/7</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="pt-8 border-t border-primary-foreground/20 text-center">
-            <p className="font-poppins text-sm opacity-60">
-              © 2024 Unreal Homes by Whistling Woods. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

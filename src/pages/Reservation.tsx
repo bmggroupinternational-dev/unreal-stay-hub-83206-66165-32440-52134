@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
 import { Calendar } from "@/components/ui/calendar";
 import { useState } from "react";
 import { motion } from "framer-motion";
@@ -100,6 +101,8 @@ const Reservation = () => {
           </div>
         </div>
       </motion.div>
+
+      <Footer />
     </div>
   );
 };

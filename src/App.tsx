@@ -10,6 +10,8 @@ import Amenities from "./pages/Amenities";
 import About from "./pages/About";
 import PropertyDetails from "./pages/PropertyDetails";
 import Reservation from "./pages/Reservation";
+import Offers from "./pages/Offers";
+import Blog from "./pages/Blog";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +30,8 @@ const App = () => (
             <Route path="/about" element={<About />} />
             <Route path="/property" element={<PropertyDetails />} />
             <Route path="/reservation" element={<Reservation />} />
+            <Route path="/offers" element={<Offers />} />
+            <Route path="/blog" element={<Blog />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </PageTransitionProvider>

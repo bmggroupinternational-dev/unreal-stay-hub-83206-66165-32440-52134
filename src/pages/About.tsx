@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
 import { Heart, Target, Award, Users } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -185,6 +186,8 @@ const About = () => {
           </p>
         </motion.div>
       </section>
+
+      <Footer />
     </div>
   );
 };
