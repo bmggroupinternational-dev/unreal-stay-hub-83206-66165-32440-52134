@@ -2,9 +2,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Home, Shield, Star, Users, MapPin, Wifi, Car, Coffee, ChevronDown, Quote } from "lucide-react";
-import { BookingBar } from "@/components/BookingBar";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { ScrollToTop } from "@/components/ScrollToTop";
 import { usePageTransition } from "@/contexts/PageTransitionContext";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
@@ -453,8 +453,73 @@ const Index = () => {
         </div>
       </motion.section>
 
-      <BookingBar />
+      {/* Properties We Manage Section */}
+      <section className="py-20 bg-secondary/30">
+        <motion.div 
+          className="container mx-auto px-6 text-center"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={fadeInUpVariants}
+        >
+          <h2 className="font-poppins text-3xl md:text-4xl font-bold italic mb-8">
+            Properties We Manage
+          </h2>
+          <Button 
+            size="lg"
+            onClick={() => navigate('/property')}
+            className="bg-primary text-primary-foreground font-poppins font-semibold px-8 mb-12 rounded-full"
+          >
+            EXPLORE OUR PROPERTIES
+          </Button>
 
+          <div className="flex flex-wrap justify-center gap-12 md:gap-20">
+            <a 
+              href="https://www.airbnb.com/rooms/unrealhomes" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="group text-center hover:opacity-80 transition-opacity"
+            >
+              <h3 className="font-poppins text-xl font-bold mb-1 group-hover:text-primary transition-colors">
+                Unreal Homes
+              </h3>
+              <p className="font-poppins text-sm text-muted-foreground uppercase tracking-wider">
+                DAR ES SALAAM
+              </p>
+            </a>
+
+            <a 
+              href="https://www.airbnb.com/rooms/staycationvillas" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="group text-center hover:opacity-80 transition-opacity"
+            >
+              <h3 className="font-poppins text-xl font-bold italic mb-1 group-hover:text-primary transition-colors">
+                Staycation Villas
+              </h3>
+              <p className="font-poppins text-sm text-muted-foreground uppercase tracking-wider">
+                DODOMA
+              </p>
+            </a>
+
+            <a 
+              href="https://www.airbnb.com/rooms/maisonluxe" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="group text-center hover:opacity-80 transition-opacity"
+            >
+              <h3 className="font-poppins text-xl font-bold mb-1 group-hover:text-primary transition-colors">
+                Maison Luxe
+              </h3>
+              <p className="font-poppins text-sm text-muted-foreground uppercase tracking-wider">
+                DODOMA
+              </p>
+            </a>
+          </div>
+        </motion.div>
+      </section>
+
+      <ScrollToTop />
       <Footer />
     </div>
   );
