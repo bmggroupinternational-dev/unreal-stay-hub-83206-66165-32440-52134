@@ -62,7 +62,7 @@ const Amenities = () => {
         { icon: UtensilsCrossed, label: "Full Kitchen", description: "Modern appliances and cookware" },
         { icon: Coffee, label: "Coffee Station", description: "Espresso machine and grinder" },
         { icon: Waves, label: "Dishwasher", description: "For your convenience" },
-        { icon: UtensilsCrossed, label: "Dining Area", description: "Seats up to 6 guests comfortably" }
+        { icon: UtensilsCrossed, label: "Dining Area", description: "Seats up to 2 guests comfortably" }
       ]
     },
     {
@@ -123,40 +123,6 @@ const Amenities = () => {
       </section>
 
       {/* Additional Features */}
-      <section className="py-16 bg-secondary/30">
-        <motion.div 
-          className="container mx-auto px-6 max-w-6xl text-center"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={fadeInUpVariants}
-        >
-          <h2 className="font-poppins text-3xl font-bold mb-8">What Sets Us Apart</h2>
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div>
-              <div className="text-4xl mb-4">🏆</div>
-              <h3 className="font-poppins font-semibold text-xl mb-2">Premium Quality</h3>
-              <p className="font-poppins text-muted-foreground">
-                Only the finest amenities and furnishings for our guests
-              </p>
-            </div>
-            <div>
-              <div className="text-4xl mb-4">🔄</div>
-              <h3 className="font-poppins font-semibold text-xl mb-2">Regular Updates</h3>
-              <p className="font-poppins text-muted-foreground">
-                We continuously upgrade our facilities and services
-              </p>
-            </div>
-            <div>
-              <div className="text-4xl mb-4">💚</div>
-              <h3 className="font-poppins font-semibold text-xl mb-2">Eco-Friendly</h3>
-              <p className="font-poppins text-muted-foreground">
-                Sustainable practices and energy-efficient appliances
-              </p>
-            </div>
-          </div>
-        </motion.div>
-      </section>
 
       <Footer />
     </div>

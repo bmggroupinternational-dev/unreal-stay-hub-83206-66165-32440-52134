@@ -16,7 +16,7 @@ export const BookingBar = () => {
             </div>
             <div className="flex items-center gap-2">
               <Users className="w-5 h-5 text-primary" />
-              <span className="font-poppins text-sm">Up to 6 Guests</span>
+              <span className="font-poppins text-sm">Up to 4 Guests</span>
             </div>
           </div>
           <Button 

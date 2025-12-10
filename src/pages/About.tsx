@@ -182,7 +182,7 @@ const About = () => {
             We'd love to hear from you and help plan your perfect stay
           </p>
           <p className="font-poppins">
-            Email: info@unrealhomes.com | Phone: +1 (555) 123-4567
+            Email: unrealhomes@whistlingwoods.co.tz | Phone: +255 740 042 042
           </p>
         </motion.div>
       </section>
