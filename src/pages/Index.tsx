@@ -77,26 +77,26 @@ const Index = () => {
           <div className="animate-fade-in">
             {/* Logo/Brand */}
             <div className="mb-8 flex items-center justify-center gap-3">
-              <div className="relative">
+              {/* <div className="relative">
                 <Home size={48} className="text-white animate-float" />
                 <div className="absolute -top-2 -right-1 w-6 h-3 bg-white/30 rounded-full"></div>
-              </div>
+              </div> */}
               <div>
                 <h1 className="font-alfa text-4xl md:text-6xl font-bold tracking-wide">
                   UNREAL HOMES
                 </h1>
-                <p className="font-poppins font-semibold text-sm md:text-lg tracking-widest opacity-90 mt-1">
+                {/* <p className="font-poppins font-semibold text-sm md:text-lg tracking-widest opacity-90 mt-1">
                   BY WHISTLING WOODS
-                </p>
+                </p> */}
               </div>
             </div>
             
             <h2 className="font-poppins text-2xl md:text-5xl font-bold mb-6 max-w-4xl mx-auto leading-tight">
-              Homes Beyond Imagination
+              A Home Beyond Your Imagination
             </h2>
             
             <p className="font-poppins text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-90">
-              Experience luxury staycations with modern, comfortable apartments designed for memorable stays. 
+              Experience luxury stays with modern, comfortable apartments designed for memorable stays. 
               <span className="block mt-2 font-semibold">Live, Stay, Experience.</span>
             </p>
             
@@ -136,9 +136,6 @@ const Index = () => {
           variants={fadeInUpVariants}
         >
           <div className="text-center mb-16">
-            <Badge variant="secondary" className="font-poppins mb-4">
-              Our Signature Suites
-            </Badge>
             <h2 className="font-poppins text-3xl md:text-5xl font-bold mb-6">
               Exceptional Stays Await
             </h2>
@@ -328,7 +325,7 @@ const Index = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { icon: Wifi, label: "High-Speed WiFi", desc: "Seamless connectivity" },
-              { icon: Coffee, label: "Welcome Refreshments", desc: "Complimentary treats" },
+              // { icon: Coffee, label: "Welcome Refreshments", desc: "Complimentary treats" },
               { icon: MapPin, label: "Prime Locations", desc: "Near key attractions" },
               { icon: Shield, label: "24/7 Security", desc: "Your safety first" }
             ].map((amenity, index) => (

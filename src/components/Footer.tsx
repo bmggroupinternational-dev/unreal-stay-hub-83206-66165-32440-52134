@@ -28,8 +28,6 @@ export const Footer = () => {
                 { to: "/", label: "Home" },
                 { to: "/suites", label: "Suites" },
                 { to: "/amenities", label: "Amenities" },
-                { to: "/offers", label: "Offers" },
-                { to: "/blog", label: "Blog" },
                 { to: "/about", label: "About Us" }
               ].map((link) => (
                 <li key={link.to}>
@@ -51,19 +49,19 @@ export const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
                 <span className="font-poppins text-sm opacity-80">
-                  Whistling Woods Estate,<br />Accra, Ghana
+                  Kijitonyama,<br />Dar Es Salaam, Tanzania
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 flex-shrink-0" />
-                <a href="tel:+233000000000" className="font-poppins text-sm opacity-80 hover:opacity-100">
-                  +233 000 000 000
+                <a href="tel:+255740042042" className="font-poppins text-sm opacity-80 hover:opacity-100">
+                  +255 740 042 042
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 flex-shrink-0" />
-                <a href="mailto:info@unrealhomes.com" className="font-poppins text-sm opacity-80 hover:opacity-100">
-                  info@unrealhomes.com
+                <a href="mailto:unrealhomes@whistlingwoods.co.tz" className="font-poppins text-sm opacity-80 hover:opacity-100">
+                 unrealhomes@whistlingwoods.co.tz
                 </a>
               </li>
             </ul>
@@ -74,27 +72,19 @@ export const Footer = () => {
             <h4 className="font-poppins font-semibold text-lg mb-6">Follow Us</h4>
             <div className="flex gap-4 mb-8">
               <a 
-                href="#" 
+                href="https://www.instagram.com/unrealhomes_apartments/?hl=en" 
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
               >
                 <Instagram className="w-5 h-5" />
               </a>
               <a 
-                href="#" 
+                href="https://www.facebook.com/p/Unreal-Homes-61572788541597/" 
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
               >
                 <Facebook className="w-5 h-5" />
               </a>
-              <a 
-                href="#" 
-                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
-              >
-                <Twitter className="w-5 h-5" />
-              </a>
             </div>
-            <p className="font-poppins text-sm opacity-80">
-              Subscribe to our newsletter for exclusive offers and updates.
-            </p>
+
           </div>
         </div>
 
